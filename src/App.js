@@ -9,18 +9,18 @@ import Post4 from './components/Post4';
 
 function App() {
   return (
+  <>
+    <BlogNav />
     <Router>
-      <div>
-        <BlogNav />
         <Routes>
           <Route path="/newblog" element={<Posts />} />
-          <Route path="/post1" element={<Post1 />} />
-          <Route path="/post2" element={<Post2 />} />
-          <Route path="/post3" element={<Post3 />} />
-          <Route path="/post4" element={<Post4 />} />
+          <Route path="/newblog/post1" element={<Post1 />} />
+          <Route path="/newblog/post2" element={<Post2 />} />
+          <Route path="/newblog/post3" element={<Post3 />} />
+          <Route path="/newblog/post4" element={<Post4 />} />
         </Routes>
-      </div>
     </Router>
+    </>
   );
 }
 
